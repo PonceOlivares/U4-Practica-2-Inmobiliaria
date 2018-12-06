@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoinmo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="#8fc9ffc9"
+        android:orientation="vertical"
+        android:paddingVertical="10dp">
+
+        <EditText
+            android:id="@+id/identificador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="IDP"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Domicilio"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="273dp">
+
+        <Button
+            android:id="@+id/insertar"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="46dp"
+            android:text="Insertar" />
+
+        <Button
+            android:id="@+id/consultar"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insertar"
+            android:layout_alignStart="@+id/borrar"
+            android:layout_marginStart="-4dp"
+            android:layout_marginTop="-51dp"
+            android:text="consultar" />
+
+        <Button
+            android:id="@+id/actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/borrar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="51dp"
+            android:text="actualizar" />
+
+        <Button
+            android:id="@+id/borrar"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginBottom="92dp"
+            android:text="borrar" />
+
+        <Button
+            android:id="@+id/pasarA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="inmueble" />
+    </RelativeLayout>
+
+
+</LinearLayout>
